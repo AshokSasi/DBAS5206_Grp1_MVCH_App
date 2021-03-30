@@ -16,7 +16,7 @@ namespace DBAS5206_GRP1_MVCH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainScreen());
+            Application.Run(new frmLogin());
         }
     }
 }

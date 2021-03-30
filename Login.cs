@@ -10,26 +10,34 @@ using System.Windows.Forms;
 
 namespace DBAS5206_GRP1_MVCH
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        frmMainScreen mainscreen;
+      
 
-        public Login()
+        public frmLogin()
         {
-            InitializeComponent();
-        }
 
+            InitializeComponent();
+          
+        }
+      
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            this.Close();
-            mainscreen.
+            this.Visible = false;
+            frmMainScreen mainScreen = new frmMainScreen();
+            mainScreen.ShowDialog();
+            
+       
 
         }
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             txtUser.Text = "";
             txtPassword.Text = "";
         }
+
+    
     }
 }

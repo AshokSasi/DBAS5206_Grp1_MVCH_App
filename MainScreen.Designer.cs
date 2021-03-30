@@ -92,8 +92,9 @@ namespace DBAS5206_GRP1_MVCH
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(80, 29);
             this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Logout";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtSearch
             // 
@@ -206,6 +207,7 @@ namespace DBAS5206_GRP1_MVCH
             this.Controls.Add(this.btnRmUtilRprt);
             this.Name = "frmMainScreen";
             this.Text = "MainScreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMainScreen_FormClosed);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -214,11 +216,11 @@ namespace DBAS5206_GRP1_MVCH
 
         #endregion
 
-        private System.Windows.Forms.Button btnRmUtilRprt;
+        public System.Windows.Forms.Button btnRmUtilRprt;
         private System.Windows.Forms.Label txtWelcome;
         private System.Windows.Forms.Label txtTitle;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

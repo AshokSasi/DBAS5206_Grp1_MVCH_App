@@ -12,10 +12,15 @@ namespace DBAS5206_GRP1_MVCH
 {
     public partial class frmMainScreen : Form
     {
+  
         public frmMainScreen()
         {
             InitializeComponent();
+           
+           
         }
+
+     
 
         //Data object declarations
         //DataSet Object
@@ -108,6 +113,22 @@ namespace DBAS5206_GRP1_MVCH
         {
             roomUtilizationViewer.Visible = false;
             btnCloseRprt.Enabled = true;
+        }
+
+        
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Visible=true;
+            this.Visible = false; 
+          
+
+        }
+
+        private void frmMainScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

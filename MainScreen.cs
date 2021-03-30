@@ -61,7 +61,7 @@ namespace DBAS5206_GRP1_MVCH
 
             roomUtilizationViewer.Visible = true;
             roomUtilizationViewer.Zoom(75);
-
+            btnCloseRprt.Enabled = true;
         }
 
     
@@ -101,6 +101,13 @@ namespace DBAS5206_GRP1_MVCH
 
             roomUtilizationViewer.Visible = true;
             roomUtilizationViewer.Zoom(75);
+            btnCloseRprt.Enabled = true;
+        }
+
+        private void btnCloseRprt_Click(object sender, EventArgs e)
+        {
+            roomUtilizationViewer.Visible = false;
+            btnCloseRprt.Enabled = true;
         }
     }
 }

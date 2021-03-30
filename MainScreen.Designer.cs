@@ -42,6 +42,7 @@ namespace DBAS5206_GRP1_MVCH
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roomUtilizationViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.btnCloseRprt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,11 +175,23 @@ namespace DBAS5206_GRP1_MVCH
             this.roomUtilizationViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.roomUtilizationViewer.Visible = false;
             // 
+            // btnCloseRprt
+            // 
+            this.btnCloseRprt.Enabled = false;
+            this.btnCloseRprt.Location = new System.Drawing.Point(754, 391);
+            this.btnCloseRprt.Name = "btnCloseRprt";
+            this.btnCloseRprt.Size = new System.Drawing.Size(120, 36);
+            this.btnCloseRprt.TabIndex = 12;
+            this.btnCloseRprt.Text = "Close Report";
+            this.btnCloseRprt.UseVisualStyleBackColor = true;
+            this.btnCloseRprt.Click += new System.EventHandler(this.btnCloseRprt_Click);
+            // 
             // frmMainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 534);
+            this.Controls.Add(this.btnCloseRprt);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -214,5 +227,6 @@ namespace DBAS5206_GRP1_MVCH
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer roomUtilizationViewer;
+        private System.Windows.Forms.Button btnCloseRprt;
     }
 }

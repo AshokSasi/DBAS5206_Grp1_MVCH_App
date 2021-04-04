@@ -38,6 +38,9 @@ namespace DBAS5206_GRP1_MVCH
             txtPassword.Text = "";
         }
 
-    
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

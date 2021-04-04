@@ -39,16 +39,15 @@
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(70, 60);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(130, 20);
             this.txtUser.TabIndex = 0;
-            
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(70, 136);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(130, 20);
             this.txtPassword.TabIndex = 1;
@@ -76,7 +75,7 @@
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(170, 203);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(56, 19);
             this.btnCancel.TabIndex = 4;
@@ -87,7 +86,7 @@
             // btnSubmit
             // 
             this.btnSubmit.Location = new System.Drawing.Point(46, 203);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(56, 19);
             this.btnSubmit.TabIndex = 5;
@@ -106,9 +105,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -112,16 +112,18 @@ namespace DBAS5206_GRP1_MVCH
         private void btnCloseRprt_Click(object sender, EventArgs e)
         {
             roomUtilizationViewer.Visible = false;
-            btnCloseRprt.Enabled = true;
+            btnCloseRprt.Enabled = false;
         }
 
         
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin();
+            //this.Close();
+           frmLogin login = new frmLogin();
             login.Visible=true;
             this.Visible = false; 
+            
           
 
         }
